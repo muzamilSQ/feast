@@ -1,0 +1,20 @@
+{
+  "name": "feast-restaurant-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FEAST Restaurant OS - ordering, kitchen, delivery, inventory, payroll and analytics",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "node --disable-warning=ExperimentalWarning --watch-path=server server/index.js",
+    "start": "NODE_ENV=production node --disable-warning=ExperimentalWarning server/index.js",
+    "seed": "node --disable-warning=ExperimentalWarning server/seed.js --demo",
+    "seed:clean": "node --disable-warning=ExperimentalWarning server/seed.js"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "zod": "3.24.1"
+  }
+}
